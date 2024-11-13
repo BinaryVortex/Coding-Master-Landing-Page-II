@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Landing Page Design With Dark Theme</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 class="logo">Coding Master</h1>
+            <nav>
+                <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Join Us</a></li>
+                <li><a href="">Contact Us</a></
+                </ul>
+            </nav>
+            <img src="Files/moon.png" id="icon">
+        </div>
+        <div class="content">
+            <h1>Level up your<br><span class="style">Coding Skills</span></h1>
+            <p>We're providing quality content on Web Development <br> and other programming languages for free. <br> Join us now and level up your coding skills.</p>
+            <div class="text">
+                <button class="btn">Apply Now</button>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <img src="Files/bg.png" class="image">
+        </div>
+        <script>
+
+            var icon = document.getElementById("icon");
+            icon.onclick = function() {
+                document.body.classList.toggle("dark-theme");
+
+                if(document.body.classList.contains("dark-theme")) {
+                    icon.src = "Files/sun.png";
+                } else {
+                    icon.src = "Files/moon.png";
+                }
+            }
+        </script>
+    </div>
+
+</body>
+</html>
